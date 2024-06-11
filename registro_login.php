@@ -1,0 +1,335 @@
+<?php
+$nombre=$_POST['nombre'];
+$apellido=$_POST['apellido'];
+
+$email=$_POST["email"];
+$contraseña=$_POST['contraseña'];
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosphp.css">
+    <link rel="shortcut icon" href="imagenes/usuario.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link rel="stylesheet" href="estilos/estilo.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>DATOS REGISTRADOS</title>
+
+ 
+</head>
+<body >
+<div id="particles-js">   </div> 
+
+
+
+   
+<header class="header"> 
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="icon">
+          <div class="icono">
+            <img src="imagenes/mando.gif" alt="icono_animado" class="iconoanimado"> 
+          </div>
+        
+            <div class="logo">
+                <a class="navbar-brand"  href="#">Repositorio</a>   
+            </div>
+        </div>    
+          
+       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportContent">
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Juegos</a></li>
+                  <li class="nav-item"><a href="quienesesomos.html" class="nav-link">¿Quienes  Somos?</a></li>
+                  <li class="nav-item"><a href="informacio.html" class="nav-link">informacion/contactos</a></li>
+                  <li class="nav-item"><a href="login.html" class="nav-link">login/registrase</a></li>
+                  
+              </ul>
+                   
+                    <div class="llamados" >
+                       <div class="buscar">
+                          <input class="barra" type="search" placeholder="busqueda">
+                           <a href=""><button class="buttn"  >buscar</button></a>
+                       </div>
+                    </div>
+                   
+                   
+                  
+                    
+          </div>
+          
+       
+     
+    </nav>
+</header>
+  
+  <form action="index.html">
+  <h2>DATOS DE REGISTRO</h2>
+  
+    
+     <?php
+   
+     echo  " <p>  Tu  nombre de usuario  es:  $nombre  </p> ";
+     echo " <p> Tu  apellido  es: $apellido</p> "; 
+     echo " <p> Tu  email es:  $email</p> ";
+
+     ?>
+          <a  href="index.html"><button class="btn btn-primary width-100" >pagina de inicio</button></a> 
+
+   
+     </form> 
+
+    
+     <footer   class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <div class="redes-sociales">
+      
+        <ul>
+          <li><a href="https://www.instagram.com/sandoval_020/"> <i class="fa-brands fa-instagram"></i> </a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100014580557679&mibextid=ZbWKwL">    <i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="">    <i class="fa-brands fa-twitter"></i></i> </a></li>
+          <li><a href="https://wa.me/3112451062">  <i class="fa-brands fa-whatsapp "></i> </a></li>
+          <li><a href="https://t.me/3112451062">     <i class="fa-brands fa-telegram"></i> </a></li>
+          <li><a href="">          <i class="fa-brands fa-github"></i> </a></li>
+          
+        </ul>
+        
+     
+      </div>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="iconosus">
+          <a href="#"> <img src="imagenes/suscribir.gif" alt="icono_suscricion" class="sus" srcset=""></a>
+        </div>
+       
+      </div>
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          
+          <div class="col-auto">
+            <p class="pt-2">
+              
+              <strong>suscribete
+                
+              </strong>
+              
+            </p>
+            
+          </div>
+         
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">digita tu email</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" id="button" class="buttn btn-outline mb-4"  >
+              suscribirse
+            </button>
+          </div>
+          <!--Grid column-->
+          
+        </div>
+    
+        
+        <!--Grid row-->
+      </form>
+      
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+  <section hidden class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+        harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 "  >
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Informacion general
+              
+            </h6>
+            <p>
+              Ejercicio de practica para el desarrollo de aplicaciones web 2024 unicomfacauca
+          
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div hidden class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              suscribirse
+            </h6>
+            <div class="iconosus">
+      
+              <a href="suscripcion.html"> <img src="imagenes/suscribir.gif" alt="icono_suscricion" class="sus" srcset=""></a>
+            </div>
+           
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div  class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              recomendaciones
+            </h6>
+            <p>
+              <a href="recomendaciones.html" class="text-reset"><b>formulario de recomenciones</b></a>
+            </p>
+         
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">contactos</h6>
+            <p><i class="fas fa-home me-3"></i> Santander de Quilichao, cauca barrio lourdes entrada vereda carbonero </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              alfredosandoval@unicomfacauca.edu.co
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +57 3112451062 </p>
+          
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    &copy 2024 Copyright:
+
+  </div>
+  <!-- Copyright -->
+  <!-- Copyright -->
+</footer>
+<section class="modal ">
+  <div class="modal__container">
+    <img src="imagenes/exito.gif" class="modal__img" alt="siscricion_exitosa" srcset="">
+    <h2 class="modal__title">suscricion exitosa</h2>
+    <p class="modal__paragraph">Empezaras a recibir notificaciones de nuevas actualizaciones para tener mas privilegios registrate y haz parte de nuestra comunidad</p>
+<a href="" class="modal__close">OK</a>
+
+
+ 
+
+</section>
+
+              <!--JS-->
+              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--scrip-->
+    <script>
+        let prev = document.querySelector(".prev");
+        let next = document.querySelector(".next");
+        let slider = document.querySelector(".slider");
+  
+        next.addEventListener("click", function () {
+          let slides = document.querySelectorAll(".imagenes");
+          slider.appendChild(slides[0]);
+        });
+        prev.addEventListener("click", function () {
+          let slides = document.querySelectorAll(".imagnes");
+          slider.prepend(slides[slides.length - 1]);
+        });
+      </script>
+
+          <!--ANIMACION DE SCROLL-->
+   <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var nav=document.querySelector("nav");
+        nav.classList.toggle("abajo",window.scrollY>0);
+
+
+
+    })
+    
+
+   </script>
+   <!--modal-->
+   <script>
+    let openmodal=document.getElementById('button');
+    const modal=document.querySelector('.modal');
+    const closemodal=document.querySelector('.modal__close');
+
+    openmodal.addEventListener('click',(e)=>{
+      e.preventDefault();
+   modal.classList.add('modal--show');
+
+
+    });
+    closemodal.addEventListener('click',(e)=>{
+      e.preventDefault();
+   modal.classList.remove('modal--show');
+
+
+    });
+   </script>
+
+   <script src="js/particles.min.js"></script>
+ 
+  <script src="js/app.js"></script>
+
+
+  
+     
+ 
+
+  
+
+    
+</body>
+</html>

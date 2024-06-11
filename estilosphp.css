@@ -1,0 +1,69 @@
+
+/*tipo de letra*/
+@font-face {
+    font-family: logo ;
+    src: url(FUENTES/FIRES\ PERSONAL\ USE.ttf);
+
+ 
+}
+
+       
+    
+    @font-face {
+    
+        font-family: titulos;
+        src: url(FUENTES/BodoniModa_9pt-Black.ttf);
+       
+    }
+    @font-face {
+        font-family: subtitulos;
+        src: url(FUENTES/Doctor\ Glitch.otf);
+       
+    }
+    @font-face {
+        font-family: enlaces;
+        src: url(FUENTES/Punktype.ttf);
+       
+    }
+    @font-face {
+        font-family: enlaces_nav;
+        src: url(FUENTES/INFECTED.ttf);
+       
+    }
+
+    @font-face {
+        font-family: letracontenido;
+        src: url(FUENTES/Neuton-Bold.ttf)
+       
+    }
+body{
+    background: rgb(255, 255, 255);
+}
+.parametros{
+    text-align: center;
+    border: solid rgb(253, 253, 253);
+    
+}
+h2{
+    text-align: center;
+    font-family: titulos;
+    
+
+ 
+}
+p{
+    font-family: letracontenido;
+}
+form{
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    width: 50%;
+    margin: 15% auto;
+    background: white;
+    
+
+
+}
+
+
